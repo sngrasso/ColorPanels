@@ -32,27 +32,27 @@ let titleOffset = 50;
 
 // Setup code goes here
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight);
 
-  // create timers
-  panelTimer = new Timer(500);
-  gameTimer = new Timer(15000);
-  // start timer
-  panelTimer.start();
+    // create timers
+    panelTimer = new Timer(500);
+    gameTimer = new Timer(15000);
+    // start timer
+    panelTimer.start();
 
-  // make buttons
-  clickButton = new Clickable();
-  initButton();
+    // make buttons
+    clickButton = new Clickable();
+    initButton();
 
-  for (let i = 0; i < boardDimensions; i++){
+    for (let i = 0; i < boardDimensions; i++){
       let box = []
       for (let j = 0; j < boardDimensions; j++){
           box.push(0);
       }
       table.push(box);
-  }
-  textAlign(CENTER);
-  textSize(96);
+    }
+    textAlign(CENTER);
+    textSize(96);
  }
 
 
